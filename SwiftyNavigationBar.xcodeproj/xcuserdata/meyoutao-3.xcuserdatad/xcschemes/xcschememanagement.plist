@@ -4,10 +4,38 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwiftyNavigationBar.xcscheme</key>
+		<key>SwiftyNavigationBar 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SwiftyNavigationBar-Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>SwiftyNavigationBar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>40E579A3205F9B2100F956ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40E579C2205F9B2100F956ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40E57A12205FA00100F956ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

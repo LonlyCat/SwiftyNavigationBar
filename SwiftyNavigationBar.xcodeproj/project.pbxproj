@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40E579A8205F9B2100F956ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E579A7205F9B2100F956ED /* AppDelegate.swift */; };
-		40E579AA205F9B2100F956ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E579A9205F9B2100F956ED /* ViewController.swift */; };
-		40E579AD205F9B2100F956ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E579AB205F9B2100F956ED /* Main.storyboard */; };
-		40E579AF205F9B2100F956ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E579AE205F9B2100F956ED /* Assets.xcassets */; };
-		40E579B2205F9B2100F956ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E579B0205F9B2100F956ED /* LaunchScreen.storyboard */; };
-		40E579BD205F9B2100F956ED /* SwiftyNavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E579BC205F9B2100F956ED /* SwiftyNavigationBarTests.swift */; };
+		40B19D75206207BC0081C3F4 /* UINavigationBar+SN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B19D74206207BC0081C3F4 /* UINavigationBar+SN.swift */; };
 		40E579C8205F9B2100F956ED /* SwiftyNavigationBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E579C7205F9B2100F956ED /* SwiftyNavigationBarUITests.swift */; };
+		40E579DE205F9B7900F956ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E579D6205F9B7900F956ED /* AppDelegate.swift */; };
+		40E579DF205F9B7900F956ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E579D7205F9B7900F956ED /* Assets.xcassets */; };
+		40E579E0205F9B7900F956ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E579D8205F9B7900F956ED /* LaunchScreen.storyboard */; };
+		40E579E1205F9B7900F956ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E579DA205F9B7900F956ED /* Main.storyboard */; };
+		40E579E3205F9B7900F956ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E579DD205F9B7900F956ED /* ViewController.swift */; };
+		40E57A17205FA00100F956ED /* SwiftyNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E57A15205FA00100F956ED /* SwiftyNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40E57A22205FA01C00F956ED /* SwiftyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E57A1F205FA01B00F956ED /* SwiftyNavigationBar.swift */; };
+		40E57A23205FA01C00F956ED /* UIViewController+SN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E57A20205FA01B00F956ED /* UIViewController+SN.swift */; };
+		40E57A24205FA01C00F956ED /* UINavigationController+SN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E57A21205FA01C00F956ED /* UINavigationController+SN.swift */; };
+		40E57A26205FA5DE00F956ED /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E57A25205FA5DE00F956ED /* Utility.swift */; };
+		40E57A2920610D3900F956ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E57A2820610D3900F956ED /* Foundation.framework */; };
+		40E57A2A2061121E00F956ED /* SwiftyNavigationBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E57A13205FA00100F956ED /* SwiftyNavigationBar.framework */; };
+		40E57A2B2061121E00F956ED /* SwiftyNavigationBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40E57A13205FA00100F956ED /* SwiftyNavigationBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		40E579B9205F9B2100F956ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40E5799C205F9B2100F956ED /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 40E579A3205F9B2100F956ED;
-			remoteInfo = SwiftyNavigationBar;
-		};
 		40E579C4205F9B2100F956ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40E5799C205F9B2100F956ED /* Project object */;
@@ -33,20 +34,40 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		40E57A2E2061121E00F956ED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40E57A2B2061121E00F956ED /* SwiftyNavigationBar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		40E579A4205F9B2100F956ED /* SwiftyNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		40E579A7205F9B2100F956ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40E579A9205F9B2100F956ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		40E579AC205F9B2100F956ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		40E579AE205F9B2100F956ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		40E579B1205F9B2100F956ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		40E579B3205F9B2100F956ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40E579B8205F9B2100F956ED /* SwiftyNavigationBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyNavigationBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		40E579BC205F9B2100F956ED /* SwiftyNavigationBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNavigationBarTests.swift; sourceTree = "<group>"; };
-		40E579BE205F9B2100F956ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B19D74206207BC0081C3F4 /* UINavigationBar+SN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+SN.swift"; sourceTree = "<group>"; };
+		40E579A4205F9B2100F956ED /* SwiftyNavigationBar-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftyNavigationBar-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E579C3205F9B2100F956ED /* SwiftyNavigationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyNavigationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E579C7205F9B2100F956ED /* SwiftyNavigationBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNavigationBarUITests.swift; sourceTree = "<group>"; };
 		40E579C9205F9B2100F956ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E579D6205F9B7900F956ED /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40E579D7205F9B7900F956ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40E579D9205F9B7900F956ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40E579DB205F9B7900F956ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40E579DC205F9B7900F956ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E579DD205F9B7900F956ED /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40E57A13205FA00100F956ED /* SwiftyNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E57A15205FA00100F956ED /* SwiftyNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyNavigationBar.h; sourceTree = "<group>"; };
+		40E57A16205FA00100F956ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E57A1F205FA01B00F956ED /* SwiftyNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyNavigationBar.swift; sourceTree = "<group>"; };
+		40E57A20205FA01B00F956ED /* UIViewController+SN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SN.swift"; sourceTree = "<group>"; };
+		40E57A21205FA01C00F956ED /* UINavigationController+SN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+SN.swift"; sourceTree = "<group>"; };
+		40E57A25205FA5DE00F956ED /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		40E57A2820610D3900F956ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,13 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		40E579B5205F9B2100F956ED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				40E57A2A2061121E00F956ED /* SwiftyNavigationBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,49 +86,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40E57A0F205FA00100F956ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E57A2920610D3900F956ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		40E5799B205F9B2100F956ED = {
 			isa = PBXGroup;
 			children = (
-				40E579A6205F9B2100F956ED /* SwiftyNavigationBar */,
-				40E579BB205F9B2100F956ED /* SwiftyNavigationBarTests */,
+				40E579D5205F9B7900F956ED /* SwiftyNavigationBar-Demo */,
 				40E579C6205F9B2100F956ED /* SwiftyNavigationBarUITests */,
+				40E57A14205FA00100F956ED /* SwiftyNavigationBar */,
 				40E579A5205F9B2100F956ED /* Products */,
+				40E57A2720610D3800F956ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		40E579A5205F9B2100F956ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40E579A4205F9B2100F956ED /* SwiftyNavigationBar.app */,
-				40E579B8205F9B2100F956ED /* SwiftyNavigationBarTests.xctest */,
+				40E579A4205F9B2100F956ED /* SwiftyNavigationBar-Demo.app */,
 				40E579C3205F9B2100F956ED /* SwiftyNavigationBarUITests.xctest */,
+				40E57A13205FA00100F956ED /* SwiftyNavigationBar.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		40E579A6205F9B2100F956ED /* SwiftyNavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				40E579A7205F9B2100F956ED /* AppDelegate.swift */,
-				40E579A9205F9B2100F956ED /* ViewController.swift */,
-				40E579AB205F9B2100F956ED /* Main.storyboard */,
-				40E579AE205F9B2100F956ED /* Assets.xcassets */,
-				40E579B0205F9B2100F956ED /* LaunchScreen.storyboard */,
-				40E579B3205F9B2100F956ED /* Info.plist */,
-			);
-			path = SwiftyNavigationBar;
-			sourceTree = "<group>";
-		};
-		40E579BB205F9B2100F956ED /* SwiftyNavigationBarTests */ = {
-			isa = PBXGroup;
-			children = (
-				40E579BC205F9B2100F956ED /* SwiftyNavigationBarTests.swift */,
-				40E579BE205F9B2100F956ED /* Info.plist */,
-			);
-			path = SwiftyNavigationBarTests;
 			sourceTree = "<group>";
 		};
 		40E579C6205F9B2100F956ED /* SwiftyNavigationBarUITests */ = {
@@ -125,43 +127,72 @@
 			path = SwiftyNavigationBarUITests;
 			sourceTree = "<group>";
 		};
+		40E579D5205F9B7900F956ED /* SwiftyNavigationBar-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				40E579D6205F9B7900F956ED /* AppDelegate.swift */,
+				40E579D7205F9B7900F956ED /* Assets.xcassets */,
+				40E579D8205F9B7900F956ED /* LaunchScreen.storyboard */,
+				40E579DA205F9B7900F956ED /* Main.storyboard */,
+				40E579DC205F9B7900F956ED /* Info.plist */,
+				40E579DD205F9B7900F956ED /* ViewController.swift */,
+			);
+			path = "SwiftyNavigationBar-Demo";
+			sourceTree = "<group>";
+		};
+		40E57A14205FA00100F956ED /* SwiftyNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				40E57A25205FA5DE00F956ED /* Utility.swift */,
+				40E57A1F205FA01B00F956ED /* SwiftyNavigationBar.swift */,
+				40E57A21205FA01C00F956ED /* UINavigationController+SN.swift */,
+				40B19D74206207BC0081C3F4 /* UINavigationBar+SN.swift */,
+				40E57A20205FA01B00F956ED /* UIViewController+SN.swift */,
+				40E57A15205FA00100F956ED /* SwiftyNavigationBar.h */,
+				40E57A16205FA00100F956ED /* Info.plist */,
+			);
+			path = SwiftyNavigationBar;
+			sourceTree = "<group>";
+		};
+		40E57A2720610D3800F956ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40E57A2820610D3900F956ED /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		40E57A10205FA00100F956ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E57A17205FA00100F956ED /* SwiftyNavigationBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		40E579A3205F9B2100F956ED /* SwiftyNavigationBar */ = {
+		40E579A3205F9B2100F956ED /* SwiftyNavigationBar-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40E579CC205F9B2100F956ED /* Build configuration list for PBXNativeTarget "SwiftyNavigationBar" */;
+			buildConfigurationList = 40E579CC205F9B2100F956ED /* Build configuration list for PBXNativeTarget "SwiftyNavigationBar-Demo" */;
 			buildPhases = (
 				40E579A0205F9B2100F956ED /* Sources */,
 				40E579A1205F9B2100F956ED /* Frameworks */,
 				40E579A2205F9B2100F956ED /* Resources */,
+				40E57A2E2061121E00F956ED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftyNavigationBar;
+			name = "SwiftyNavigationBar-Demo";
 			productName = SwiftyNavigationBar;
-			productReference = 40E579A4205F9B2100F956ED /* SwiftyNavigationBar.app */;
+			productReference = 40E579A4205F9B2100F956ED /* SwiftyNavigationBar-Demo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		40E579B7205F9B2100F956ED /* SwiftyNavigationBarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 40E579CF205F9B2100F956ED /* Build configuration list for PBXNativeTarget "SwiftyNavigationBarTests" */;
-			buildPhases = (
-				40E579B4205F9B2100F956ED /* Sources */,
-				40E579B5205F9B2100F956ED /* Frameworks */,
-				40E579B6205F9B2100F956ED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				40E579BA205F9B2100F956ED /* PBXTargetDependency */,
-			);
-			name = SwiftyNavigationBarTests;
-			productName = SwiftyNavigationBarTests;
-			productReference = 40E579B8205F9B2100F956ED /* SwiftyNavigationBarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		40E579C2205F9B2100F956ED /* SwiftyNavigationBarUITests */ = {
 			isa = PBXNativeTarget;
@@ -181,6 +212,24 @@
 			productReference = 40E579C3205F9B2100F956ED /* SwiftyNavigationBarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		40E57A12205FA00100F956ED /* SwiftyNavigationBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40E57A1C205FA00100F956ED /* Build configuration list for PBXNativeTarget "SwiftyNavigationBar" */;
+			buildPhases = (
+				40E57A0E205FA00100F956ED /* Sources */,
+				40E57A0F205FA00100F956ED /* Frameworks */,
+				40E57A10205FA00100F956ED /* Headers */,
+				40E57A11205FA00100F956ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyNavigationBar;
+			productName = SwiftyNavigationBar;
+			productReference = 40E57A13205FA00100F956ED /* SwiftyNavigationBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,15 +244,15 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					40E579B7205F9B2100F956ED = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 40E579A3205F9B2100F956ED;
-					};
 					40E579C2205F9B2100F956ED = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 40E579A3205F9B2100F956ED;
+					};
+					40E57A12205FA00100F956ED = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -220,9 +269,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40E579A3205F9B2100F956ED /* SwiftyNavigationBar */,
-				40E579B7205F9B2100F956ED /* SwiftyNavigationBarTests */,
+				40E579A3205F9B2100F956ED /* SwiftyNavigationBar-Demo */,
 				40E579C2205F9B2100F956ED /* SwiftyNavigationBarUITests */,
+				40E57A12205FA00100F956ED /* SwiftyNavigationBar */,
 			);
 		};
 /* End PBXProject section */
@@ -232,20 +281,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E579B2205F9B2100F956ED /* LaunchScreen.storyboard in Resources */,
-				40E579AF205F9B2100F956ED /* Assets.xcassets in Resources */,
-				40E579AD205F9B2100F956ED /* Main.storyboard in Resources */,
+				40E579E1205F9B7900F956ED /* Main.storyboard in Resources */,
+				40E579DF205F9B7900F956ED /* Assets.xcassets in Resources */,
+				40E579E0205F9B7900F956ED /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40E579B6205F9B2100F956ED /* Resources */ = {
+		40E579C1205F9B2100F956ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40E579C1205F9B2100F956ED /* Resources */ = {
+		40E57A11205FA00100F956ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,16 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E579AA205F9B2100F956ED /* ViewController.swift in Sources */,
-				40E579A8205F9B2100F956ED /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		40E579B4205F9B2100F956ED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				40E579BD205F9B2100F956ED /* SwiftyNavigationBarTests.swift in Sources */,
+				40E579E3205F9B7900F956ED /* ViewController.swift in Sources */,
+				40E579DE205F9B7900F956ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,36 +321,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40E57A0E205FA00100F956ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E57A24205FA01C00F956ED /* UINavigationController+SN.swift in Sources */,
+				40B19D75206207BC0081C3F4 /* UINavigationBar+SN.swift in Sources */,
+				40E57A26205FA5DE00F956ED /* Utility.swift in Sources */,
+				40E57A22205FA01C00F956ED /* SwiftyNavigationBar.swift in Sources */,
+				40E57A23205FA01C00F956ED /* UIViewController+SN.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		40E579BA205F9B2100F956ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 40E579A3205F9B2100F956ED /* SwiftyNavigationBar */;
-			targetProxy = 40E579B9205F9B2100F956ED /* PBXContainerItemProxy */;
-		};
 		40E579C5205F9B2100F956ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 40E579A3205F9B2100F956ED /* SwiftyNavigationBar */;
+			target = 40E579A3205F9B2100F956ED /* SwiftyNavigationBar-Demo */;
 			targetProxy = 40E579C4205F9B2100F956ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		40E579AB205F9B2100F956ED /* Main.storyboard */ = {
+		40E579D8205F9B7900F956ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				40E579AC205F9B2100F956ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		40E579B0205F9B2100F956ED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40E579B1205F9B2100F956ED /* Base */,
+				40E579D9205F9B7900F956ED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		40E579DA205F9B7900F956ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E579DB205F9B7900F956ED /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -363,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -425,13 +473,17 @@
 		40E579CD205F9B2100F956ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7Q8CT99FG;
-				INFOPLIST_FILE = SwiftyNavigationBar/Info.plist;
+				INFOPLIST_FILE = "SwiftyNavigationBar-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bs.SwiftyNavigationBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.SwiftyNavigationBar.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,49 +492,19 @@
 		40E579CE205F9B2100F956ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7Q8CT99FG;
-				INFOPLIST_FILE = SwiftyNavigationBar/Info.plist;
+				INFOPLIST_FILE = "SwiftyNavigationBar-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bs.SwiftyNavigationBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.SwiftyNavigationBar.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		40E579D0205F9B2100F956ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F7Q8CT99FG;
-				INFOPLIST_FILE = SwiftyNavigationBarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bs.SwiftyNavigationBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyNavigationBar.app/SwiftyNavigationBar";
-			};
-			name = Debug;
-		};
-		40E579D1205F9B2100F956ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F7Q8CT99FG;
-				INFOPLIST_FILE = SwiftyNavigationBarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bs.SwiftyNavigationBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyNavigationBar.app/SwiftyNavigationBar";
 			};
 			name = Release;
 		};
@@ -518,6 +540,61 @@
 			};
 			name = Release;
 		};
+		40E57A1D205FA00100F956ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F7Q8CT99FG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftyNavigationBar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.SwiftyNavigationBar;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40E57A1E205FA00100F956ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F7Q8CT99FG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftyNavigationBar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.SwiftyNavigationBar;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,20 +607,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40E579CC205F9B2100F956ED /* Build configuration list for PBXNativeTarget "SwiftyNavigationBar" */ = {
+		40E579CC205F9B2100F956ED /* Build configuration list for PBXNativeTarget "SwiftyNavigationBar-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40E579CD205F9B2100F956ED /* Debug */,
 				40E579CE205F9B2100F956ED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		40E579CF205F9B2100F956ED /* Build configuration list for PBXNativeTarget "SwiftyNavigationBarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				40E579D0205F9B2100F956ED /* Debug */,
-				40E579D1205F9B2100F956ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -553,6 +621,15 @@
 			buildConfigurations = (
 				40E579D3205F9B2100F956ED /* Debug */,
 				40E579D4205F9B2100F956ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40E57A1C205FA00100F956ED /* Build configuration list for PBXNativeTarget "SwiftyNavigationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E57A1D205FA00100F956ED /* Debug */,
+				40E57A1E205FA00100F956ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
