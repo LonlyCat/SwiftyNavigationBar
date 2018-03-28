@@ -25,7 +25,7 @@ extension SwiftyNavigationBar where Base: UIViewController {
         }
         set {
             let _alpha = max(min(newValue, 1), 0) // 必须在 0~1的范围
-            objc_setAssociatedObject(base, &SNAssociatedKeys.alpha, _alpha, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(base, &SNAssociatedKeys.alpha, _alpha, .OBJC_ASSOCIATION_ASSIGN)
 
             // Update UI
             base.navigationController?.setNeedsUpdateBar(alpha: _alpha)
@@ -79,8 +79,9 @@ extension SwiftyNavigationBar where Base: UIViewController {
             return color
         }
         set {
+            print("new shadowAlpha: \(newValue)")
             base.navigationController?.setNeedsUpdateBar(shadowAlpha: newValue)
-            objc_setAssociatedObject(base, &SNAssociatedKeys.shadowAlpha, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(base, &SNAssociatedKeys.shadowAlpha, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
     }
 

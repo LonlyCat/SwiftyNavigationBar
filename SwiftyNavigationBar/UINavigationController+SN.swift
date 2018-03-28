@@ -143,8 +143,8 @@ extension UINavigationController {
     }
 
     @objc func sn_pushViewController(_ viewController: UIViewController, animated: Bool) {
-        setNeedsUpdateBar(with: viewController, duration: 0.25)
 
+        setNeedsUpdateBar(with: viewController, duration: 0.25)
         sn_pushViewController(viewController, animated: animated)
     }
 
@@ -172,6 +172,7 @@ extension UINavigationController {
             }
 
             barBackgroundView.alpha = alpha
+            self.navigationBar.sn.colorView?.alpha = alpha
 
         }, completion: nil)
     }
@@ -180,10 +181,19 @@ extension UINavigationController {
                            duration: TimeInterval = 0,
                            animatorCurve: UIViewAnimationCurve = .linear) {
 
-        self.navigationBar.barTintColor = viewController?.sn.barTintColor
-        UIView.animate(withDuration: duration, delay: 0, options: animatorCurve.options, animations: {
+        print("viewController: \(String(describing: viewController))")
+
+        if #available(iOS 11, *) {
+            UIView.animate(withDuration: duration, delay: 0, options: animatorCurve.options, animations: {
+                self.navigationBar.tintColor = viewController?.sn.tintColor ?? SNAssociatedKeys.tintColor
+                self.navigationBar.barTintColor = viewController?.sn.barTintColor
+            }, completion: nil)
+        }
+        else {
             self.navigationBar.tintColor = viewController?.sn.tintColor ?? SNAssociatedKeys.tintColor
-        }, completion: nil)
+            self.navigationBar.barTintColor = viewController?.sn.barTintColor
+        }
+
 
         // back ground alpha
         let changeBackground = setNeedsUpdateBar(backgroundColor: viewController?.sn.backgroundColor,
@@ -194,43 +204,39 @@ extension UINavigationController {
                           duration: duration,
                           animatorCurve: animatorCurve)
 
+        // shadow color
+        let shadowColor = viewController?.sn.shadowColor
+        print("shadowColor: \(String(describing: shadowColor))")
+        setNeedsUpdateBar(shadowColor: shadowColor)
+
         // shadow alpha
         let shadowAlpha = min(viewController?.sn.alpha ?? 0.0, viewController?.sn.shadowAlpha ?? 0.0)
+        print("shadowAlpha: \(shadowAlpha)")
         setNeedsUpdateBar(shadowAlpha: shadowAlpha)
-
-        // shadow color
-        setNeedsUpdateBar(shadowColor: viewController?.sn.shadowColor)
     }
 
     func setNeedsUpdateBar(shadowColor: UIColor?) {
-        if let color = shadowColor,
-            let img = UIImage.image(with: color, size: CGSize(width: 1, height: 1/UIScreen.main.scale)) {
+        if let color = shadowColor {
 
-            if #available(iOS 11, *) {
-                navigationBar.shadowImage = img
-            }
-            else {
-                setNeedsUpdateBar(shadowAlpha: 0)
-                navigationBar.sn.shadowView?.backgroundColor = color
-            }
+            navigationBar.sn.shadowView?.backgroundColor = color
         }
         else {
-            if #available(iOS 11, *) {
-                navigationBar.shadowImage = nil
-            }
-            else {
-                navigationBar.sn.shadowView = nil
-            }
+            navigationBar.sn.shadowView = nil
         }
     }
 
     func setNeedsUpdateBar(shadowAlpha: CGFloat) {
+
+        // 隐藏系统分割线
         let barBackgroundView = navigationBar.subviews[0]
         let valueForKey = barBackgroundView.value(forKey:)
         if let shadowView = valueForKey("_shadowView") as? UIView {
-            shadowView.alpha = shadowAlpha
-            shadowView.isHidden = shadowAlpha == 0
+            shadowView.isHidden = true
         }
+
+        // 修改自定义分割线
+        navigationBar.sn.shadowView?.alpha = shadowAlpha
+        navigationBar.sn.shadowView?.isHidden = shadowAlpha == 0
     }
 
     /// 改变 color view 颜色
